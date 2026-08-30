@@ -1,20 +1,22 @@
 import "./App.css";
-import { Contact, Footer, Header, Hero, Skills, Stats } from "./components";
-import { experience, projects } from "./data";
+import {
+  Contact,
+  Footer,
+  Header,
+  Hero,
+  Projects,
+  Skills,
+  Stats,
+} from "./components";
+import { experience } from "./data";
 
 function App() {
   return (
     <div className="portfolio">
-      {/* NAVIGATION */}
       <Header />
-
-      {/* HERO */}
       <main>
         <Hero />
-
-        {/* STATS */}
         <Stats />
-
         {/* ABOUT */}
         <section id="about" className="section about-section">
           <div className="section-heading">
@@ -100,49 +102,10 @@ function App() {
             ))}
           </div>
         </section>
-
-        {/* PROJECTS */}
-        <section id="projects" className="section projects-section">
-          <div className="section-heading">
-            <p className="eyebrow">03 — SELECTED WORK</p>
-            <h2>
-              Projects I've
-              <br />
-              <span>worked on.</span>
-            </h2>
-          </div>
-
-          <div className="projects-grid">
-            {projects.map((project, index) => (
-              <article className="project-card" key={project.title}>
-                <div className="project-number">0{index + 1}</div>
-
-                <p className="project-category">{project.category}</p>
-
-                <h3>{project.title}</h3>
-
-                <p>{project.description}</p>
-
-                <div className="tech-list">
-                  {project.tech.map((tech) => (
-                    <span key={tech}>{tech}</span>
-                  ))}
-                </div>
-
-                <div className="project-arrow">↗</div>
-              </article>
-            ))}
-          </div>
-        </section>
-
-        {/* SKILLS */}
+        <Projects />
         <Skills />
-
-        {/* CONTACT */}
         <Contact />
       </main>
-
-      {/* FOOTER */}
       <Footer />
     </div>
   );
