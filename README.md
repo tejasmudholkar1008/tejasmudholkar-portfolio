@@ -1,75 +1,150 @@
-# React + TypeScript + Vite
+# Tejas Mudholkar — Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Personal portfolio website showcasing my experience, projects, technical skills, and professional journey as a Senior Full Stack Developer.
 
-Currently, two official plugins are available:
+## 🚀 About
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+I am a Senior Full Stack Developer with 7+ years of experience building enterprise-grade web and mobile applications.
 
-## React Compiler
+My primary expertise includes:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React.js
+- React Native
+- TypeScript
+- JavaScript
+- Node.js
+- .NET Core
+- Microsoft Azure
+- AI-powered applications
+- Micro Frontends
+- Cloud-native development
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Frontend
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- React.js
+- React Native
+- TypeScript
+- JavaScript
+- Redux
+- Redux Persist
+- HTML5
+- CSS3
+- SCSS
+- Tailwind CSS
+- Micro Frontends
+- Module Federation
+- Webpack
+- Vite
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Backend
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- Node.js
+- Express.js
+- .NET Core Web API
+- REST APIs
+- WebSockets
 
-```
+### Cloud & DevOps
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+- Microsoft Azure
+- Azure Kubernetes Service (AKS)
+- Docker
+- Kubernetes
+- Rancher
+- GitHub Actions
+- Jenkins
+- Octopus Deploy
+- CI/CD
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Security
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- OAuth 2.0
+- OIDC
+- JWT
+- RBAC
+- SSO
+- Kong Gateway
+- Session Management
 
+### AI
+
+- Generative AI
+- AI Chatbots
+- Prompt Engineering
+- Conversational UI
+- RAG Concepts
+- Streaming AI
+- Workflow Automation
+- GitHub Copilot
+
+### Databases
+
+- PostgreSQL
+- MySQL
+
+## 💼 Experience
+
+### Barclays
+
+**Senior Software Engineer**  
+June 2026 — Present  
+Pune, India
+
+Working on secure mobile and web applications for Barclays UK Banking using React Native, React.js, TypeScript and Node.js.
+
+### Honeywell Technology Solutions
+
+**Software Engineer II / Mobile Developer II**  
+March 2022 — June 2026  
+Bangalore, India
+
+Worked across frontend, backend, mobile, cloud and AI-powered enterprise applications using React, React Native, Node.js, .NET Core, Azure, Docker and Kubernetes.
+
+### Capgemini
+
+**Senior Analyst**  
+February 2019 — March 2022  
+Pune, India
+
+Developed scalable retail, e-commerce and enterprise web/mobile applications using React.js, React Native, Node.js, .NET, Redux and databases including PostgreSQL and MySQL.
+
+## 📂 Featured Projects
+
+- **Barclays UK Banking** — Secure mobile and web banking applications
+- **BMS Assist AI** — AI-powered conversational enterprise application
+- **Honeywell Forge** — Enterprise industrial platform
+- **Honeywell Site Onboarding** — Industrial site onboarding workflows
+- **Retail E-Commerce Platform** — Cross-platform retail application
+
+## 📁 Project Structure
+
+```text
+src/
+├── assets/
+│   └── images/
+│
+├── components/
+│   ├── Header.tsx
+│   ├── Hero.tsx
+│   ├── About.tsx
+│   ├── Skills.tsx
+│   ├── Experience.tsx
+│   ├── Projects.tsx
+│   ├── Education.tsx
+│   ├── Contact.tsx
+│   └── Footer.tsx
+│
+├── data/
+│   ├── experience.ts
+│   ├── projects.ts
+│   ├── skills.ts
+│   ├── education.ts
+│   └── personal.ts
+│
+├── App.tsx
+├── App.css
+├── index.css
+└── main.tsx
 ```
