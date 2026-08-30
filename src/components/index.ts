@@ -10,3 +10,4 @@ export * from "./Navbar";
 export * from "./ProjectCard";
 export * from "./ExperienceCard";
 export * from "./ProjectCard";
+export * from "./Header";

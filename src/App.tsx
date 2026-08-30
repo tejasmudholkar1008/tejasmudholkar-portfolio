@@ -1,27 +1,12 @@
 import "./App.css";
+import { Header } from "./components";
 import { experience, projects, skills, stats, personal } from "./data";
 
 function App() {
   return (
     <div className="portfolio">
       {/* NAVIGATION */}
-      <header className="navbar">
-        <a href="#home" className="logo">
-          TM<span>.</span>
-        </a>
-
-        <nav>
-          <a href="#about">About</a>
-          <a href="#experience">Experience</a>
-          <a href="#projects">Projects</a>
-          <a href="#skills">Skills</a>
-          <a href="#contact">Contact</a>
-        </nav>
-
-        <a href="mailto:mudholkartejas1111@gmail.com" className="nav-button">
-          Let's Talk
-        </a>
-      </header>
+      <Header />
 
       {/* HERO */}
       <main>
