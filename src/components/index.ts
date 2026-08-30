@@ -7,7 +7,4 @@ export * from "./Hero";
 export * from "./Footer";
 export * from "./Stats";
 export * from "./Navbar";
-export * from "./ProjectCard";
-export * from "./ExperienceCard";
-export * from "./ProjectCard";
 export * from "./Header";
