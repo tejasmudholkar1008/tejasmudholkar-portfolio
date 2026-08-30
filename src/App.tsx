@@ -1,5 +1,5 @@
 import "./App.css";
-import { Header, Hero } from "./components";
+import { Header, Hero, Stats } from "./components";
 import { experience, projects, skills, stats, personal } from "./data";
 
 function App() {
@@ -13,14 +13,7 @@ function App() {
         <Hero />
 
         {/* STATS */}
-        <section className="stats-section">
-          {stats.map((stat) => (
-            <div className="stat" key={stat.label}>
-              <strong>{stat.value}</strong>
-              <span>{stat.label}</span>
-            </div>
-          ))}
-        </section>
+        <Stats />
 
         {/* ABOUT */}
         <section id="about" className="section about-section">
