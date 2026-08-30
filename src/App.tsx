@@ -1,5 +1,5 @@
 import "./App.css";
-import { experience, projects, skills, stats } from "./data";
+import { experience, projects, skills, stats, personal } from "./data";
 
 function App() {
   return (
@@ -36,9 +36,8 @@ function App() {
             </h1>
 
             <p className="hero-description">
-              I'm Tejas Mudholkar — a Senior Full Stack Developer specializing
-              in React, React Native, Node.js, Azure and AI-powered
-              applications.
+              I'm {personal.name} — a {personal.role} specializing in React,
+              React Native, Node.js, Azure and AI-powered applications.
             </p>
 
             <div className="hero-actions">
@@ -52,15 +51,11 @@ function App() {
             </div>
 
             <div className="social-links">
-              <a
-                href="https://linkedin.com/in/tejas-mudholkar"
-                target="_blank"
-                rel="noreferrer"
-              >
+              <a href={personal.linkedin} target="_blank" rel="noreferrer">
                 LinkedIn ↗
               </a>
 
-              <a href="mailto:mudholkartejas1111@gmail.com">Email ↗</a>
+              <a href={`mailto:${personal.email}`}>Email ↗</a>
             </div>
           </div>
 
@@ -82,15 +77,16 @@ function App() {
                 </p>
 
                 <p className="indent">
-                  name: <span className="green">"Tejas Mudholkar"</span>,
+                  name: <span className="green">"{personal.name}"</span>,
                 </p>
 
                 <p className="indent">
-                  role: <span className="green">"Senior Full Stack"</span>,
+                  role: <span className="green">"{personal.role}"</span>,
                 </p>
 
                 <p className="indent">
-                  experience: <span className="orange">"7+ years"</span>,
+                  experience:{" "}
+                  <span className="orange">"{personal.experience}"</span>,
                 </p>
 
                 <p className="indent">
@@ -305,23 +301,16 @@ function App() {
             My inbox is always open.
           </p>
 
-          <a
-            href="mailto:mudholkartejas1111@gmail.com"
-            className="contact-email"
-          >
-            mudholkartejas1111@gmail.com ↗
+          <a href={`mailto:${personal.email}`} className="contact-email">
+            {personal.email} ↗
           </a>
 
           <div className="contact-links">
-            <a
-              href="https://linkedin.com/in/tejas-mudholkar"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a href={personal.linkedin} target="_blank" rel="noreferrer">
               LinkedIn
             </a>
 
-            <a href="tel:+919922612599">+91 99226 12599</a>
+            <a href={`tel:${personal.phone}`}>{personal.phone}</a>
           </div>
         </section>
       </main>
@@ -330,7 +319,9 @@ function App() {
       <footer>
         <div>
           <strong>TM.</strong>
-          <span>© {new Date().getFullYear()} Tejas Mudholkar</span>
+          <span>
+            © {new Date().getFullYear()} {personal.name}
+          </span>
         </div>
 
         <span>Designed & built with React</span>
