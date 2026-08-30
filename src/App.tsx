@@ -1,5 +1,5 @@
 import "./App.css";
-import { Footer, Header, Hero, Stats } from "./components";
+import { Contact, Footer, Header, Hero, Stats } from "./components";
 import { experience, projects, skills, personal } from "./data";
 
 function App() {
@@ -162,32 +162,7 @@ function App() {
         </section>
 
         {/* CONTACT */}
-        <section id="contact" className="contact-section">
-          <p className="eyebrow">05 — CONTACT</p>
-
-          <h2>
-            Let's build
-            <br />
-            something <span>great.</span>
-          </h2>
-
-          <p>
-            Have an interesting project, opportunity or simply want to connect?
-            My inbox is always open.
-          </p>
-
-          <a href={`mailto:${personal.email}`} className="contact-email">
-            {personal.email} ↗
-          </a>
-
-          <div className="contact-links">
-            <a href={personal.linkedin} target="_blank" rel="noreferrer">
-              LinkedIn
-            </a>
-
-            <a href={`tel:${personal.phone}`}>{personal.phone}</a>
-          </div>
-        </section>
+        <Contact />
       </main>
 
       {/* FOOTER */}
