@@ -1,6 +1,6 @@
 import "./App.css";
-import { Contact, Footer, Header, Hero, Stats } from "./components";
-import { experience, projects, skills, personal } from "./data";
+import { Contact, Footer, Header, Hero, Skills, Stats } from "./components";
+import { experience, projects } from "./data";
 
 function App() {
   return (
@@ -136,30 +136,7 @@ function App() {
         </section>
 
         {/* SKILLS */}
-        <section id="skills" className="section skills-section">
-          <div className="section-heading">
-            <p className="eyebrow">04 — TECHNOLOGY</p>
-            <h2>
-              Tools I use to
-              <br />
-              <span>build things.</span>
-            </h2>
-          </div>
-
-          <div className="skills-grid">
-            {Object.entries(skills).map(([category, items]) => (
-              <div className="skill-category" key={category}>
-                <h3>{category}</h3>
-
-                <div className="skill-items">
-                  {items.map((skill) => (
-                    <span key={skill}>{skill}</span>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
-        </section>
+        <Skills />
 
         {/* CONTACT */}
         <Contact />
