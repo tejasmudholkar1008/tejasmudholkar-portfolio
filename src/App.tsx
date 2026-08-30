@@ -1,6 +1,6 @@
 import "./App.css";
-import { Header, Hero, Stats } from "./components";
-import { experience, projects, skills, stats, personal } from "./data";
+import { Footer, Header, Hero, Stats } from "./components";
+import { experience, projects, skills, personal } from "./data";
 
 function App() {
   return (
@@ -191,16 +191,7 @@ function App() {
       </main>
 
       {/* FOOTER */}
-      <footer>
-        <div>
-          <strong>TM.</strong>
-          <span>
-            © {new Date().getFullYear()} {personal.name}
-          </span>
-        </div>
-
-        <span>Designed & built with React</span>
-      </footer>
+      <Footer />
     </div>
   );
 }
