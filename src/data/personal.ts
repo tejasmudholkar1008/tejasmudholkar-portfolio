@@ -7,16 +7,10 @@ export const stats = [
 
 export const personal = {
   name: "Tejas Mudholkar",
-
   role: "Senior Full Stack Developer",
-
-  email: "mudholkartejas1111@gmail.com",
-
+  email: "hello@tejasmudholkar.com",
   phone: "+91 99226 12599",
-
   linkedin: "https://linkedin.com/in/tejas-mudholkar",
-
   experience: "7+ years",
-
   location: "Pune, India",
 };
