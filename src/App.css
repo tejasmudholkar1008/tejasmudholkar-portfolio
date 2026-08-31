@@ -285,14 +285,28 @@ a {
 
 .window-dots {
   display: flex;
-  gap: 6px;
+  align-items: center;
+  gap: 8px;
 }
 
 .window-dots i {
-  width: 9px;
-  height: 9px;
-  background: var(--border-hover);
+  width: 13px;
+  height: 13px;
   border-radius: 50%;
+  display: block;
+  flex-shrink: 0;
+}
+
+.window-dots i:nth-child(1) {
+  background: #ff5f57;
+}
+
+.window-dots i:nth-child(2) {
+  background: #febc2e;
+}
+
+.window-dots i:nth-child(3) {
+  background: #28c840;
 }
 
 .code-content {
