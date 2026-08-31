@@ -6,4 +6,4 @@ export * from "./Contact";
 export * from "./Hero";
 export * from "./Footer";
 export * from "./Stats";
-export * from "./Header";
+export * from "./Header/Header";
