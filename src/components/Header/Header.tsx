@@ -4,6 +4,7 @@ import { useTheme } from "../../context/ThemeContext";
 
 export function Header() {
   const { theme, toggleTheme } = useTheme();
+
   return (
     <header className="navbar">
       <a href="#home" className="logo">
@@ -27,11 +28,19 @@ export function Header() {
         >
           <span className="theme-icon">{theme === "dark" ? "☀" : "☾"}</span>
         </button>
-      </div>
 
-      <a href={`mailto:${personal.email}`} className="nav-button">
-        Let's Talk
-      </a>
+        <a
+          href="/tejas-mudholkar-resume-2026.pdf"
+          download="Tejas-Mudholkar-Resume.pdf"
+          className="nav-button"
+        >
+          Resume ↓
+        </a>
+
+        <a href={`mailto:${personal.email}`} className="nav-button">
+          Let's Talk
+        </a>
+      </div>
     </header>
   );
 }
